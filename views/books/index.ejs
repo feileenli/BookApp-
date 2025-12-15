@@ -2,15 +2,13 @@
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
   <h2 style="margin: 0;">My Book Collection</h2>
-  <a href="/books/new" class="btn">Add New Book</a>
 </div>
 
 <% if (books.length === 0) { %>
   <div class="empty-state">
     <h3>Your collection is empty</h3>
-    <p>Start by searching for books on the home page or manually adding a book.</p>
+    <p>Start by searching for books on the home page.</p>
     <a href="/" class="btn">Search Books</a>
-    <a href="/books/new" class="btn btn-secondary">Add Manually</a>
   </div>
 <% } else { %>
   <div class="book-grid">

@@ -12,10 +12,6 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/new', (req, res) => {
-  res.render('books/new', { title: 'Add New Book' });
-});
-
 router.post('/', async (req, res) => {
   try {
     const book = new Book({
