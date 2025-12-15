@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+
+<div class="hero">
+  <h2>My Book Collection</h2>
+  <p>Search for books using the Open Library API and manage your personal reading collection</p>
+  <a href="/books" class="btn">View My Collection</a>
+</div>
+
+<div class="search-section">
+  <h3>Search for Books</h3>
+  <form id="searchForm" class="search-form">
+    <input 
+      type="text" 
+      id="searchInput" 
+      class="search-input" 
+      placeholder="Search by title, author, or ISBN..." 
+      required
+    >
+    <button type="submit" class="btn">Search</button>
+  </form>
+  
+  <div id="searchResults"></div>
+</div>
+
+<%- include('partials/footer') %>
